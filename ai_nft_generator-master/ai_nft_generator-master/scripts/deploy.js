@@ -9,7 +9,7 @@ async function main() {
   const nf = await NFT.deploy(NAME, SYMBOL, COST)
   await nf.deployed()
 
-  console.log(`Deployed NFT Contract at: ${nft.address}`)
+  console.log(`Deployed NFT Contract at: ${nf.address}`)
 }
 
 // We recommend this pattern to be able to use async/await everywhere
