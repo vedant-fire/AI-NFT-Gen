@@ -6,8 +6,8 @@ async function main() {
   const COST = ethers.utils.parseUnits("1", "ether") // 1 ETH
 
   const NFT = await hre.ethers.getContractFactory("NFT")
-  const nft = await NFT.deploy(NAME, SYMBOL, COST)
-  await nft.deployed()
+  const nf = await NFT.deploy(NAME, SYMBOL, COST)
+  await nf.deployed()
 
   console.log(`Deployed NFT Contract at: ${nft.address}`)
 }
