@@ -25,7 +25,7 @@ function App() {
   const [url, setURL] = useState(null)
 
   const [message, setMessage] = useState("")
-  const [isWaiting, setIsWaiting] = useState(false)
+  const [isWaiting, setIsWaiting] = useState(false
 
   const loadBlockchainData = async () => {
     const provider = new ethers.providers.Web3Provider(window.ethereum)
